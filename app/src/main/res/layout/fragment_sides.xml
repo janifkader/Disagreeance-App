@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sidesFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2323f7"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".SidesFragment">
+
+    <TextView
+        android:id="@+id/pickASide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pickASide"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/pickA"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:backgroundTint="#f00a0a"
+        android:text="Loading Option A.."
+        android:textSize="50dp"
+        android:fontFamily="@font/rakkas"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@+id/pickASide"/>
+    <Button
+        android:id="@+id/pickB"
+        android:layout_width="match_parent"
+        android:text="Loading Option B.."
+        android:textSize="50dp"
+        android:fontFamily="@font/rakkas"
+        app:cornerRadius="0dp"
+        android:backgroundTint="#24a0ff"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@+id/pickA"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

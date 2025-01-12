@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categoryFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#2323f7"
+    tools:context=".CategoryFragment">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="75sp"
+        android:textColor="@color/white"
+        android:text="Generating question..."
+        android:fontFamily="@font/rakkas"
+        />
+    <TextView
+        android:id="@+id/option1"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:text="Generating option 1..."
+        android:fontFamily="@font/rakkas"
+        />
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/option1"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:text="Generating option 2..."
+        android:fontFamily="@font/rakkas"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/returnHome"
+        android:id="@+id/regenerate"
+        android:backgroundTint="#0404cf"
+        android:fontFamily="@font/mplus"
+        android:textSize="25sp"
+        android:text="Regenerate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/continueButton"
+        android:backgroundTint="#0404cf"
+        android:fontFamily="@font/mplus"
+        android:textSize="25sp"
+        android:text="Continue"/>
+    <ImageButton
+        android:id="@+id/returnHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/home"
+        android:backgroundTint="#2323f7"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/regenerate"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

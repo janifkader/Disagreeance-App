@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "89952096873",
+    "firebase_url": "https://disagreeance-c7dfe-default-rtdb.firebaseio.com",
+    "project_id": "disagreeance-c7dfe",
+    "storage_bucket": "disagreeance-c7dfe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89952096873:android:3fb6b0763130d55813c8f8",
+        "android_client_info": {
+          "package_name": "com.example.disagreeance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_QgoBWfUELmAGNh8CrtnjScXtIhGgG5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
